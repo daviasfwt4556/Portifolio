@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos — Davi Augusto</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Davi Augusto</h1>
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="projetos.html" class="active">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+      <button id="modo-btn" onclick="dark()">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="projects">
+      <h2>Projetos</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="Projeto.png" alt="Projeto 1">
+          <h3>Projeto 1</h3>
+          <p>Descrição curta do projeto. Tecnologias usadas: HTML, CSS, JS.</p>
+          <button class="btn open-modal"
+            data-title="Projeto 1"
+            data-desc="Descrição completa do Projeto 1. Tecnologias: HTML, CSS e JavaScript."
+            data-link="#">Ver detalhes</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="project-modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Fechar">✖</button>
+      <h3 id="modal-title">Título</h3>
+      <p id="modal-desc">Descrição</p>
+      <a id="modal-link" href="#" target="_blank" class="btn">Ver no GitHub / Demo</a>
+    </div>
+  </div>
+</body>
+</html>

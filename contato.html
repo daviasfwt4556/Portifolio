@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato — Davi Augusto</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Davi Augusto</h1>
+      <nav class="nav">
+        <a href="index.html">Início</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html" class="active">Contato</a>
+      </nav>
+      <button id="modo-btn" onclick="dark()">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact">
+      <h2>Contato</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Nome</label>
+        <input id="name" name="name" required placeholder="Seu nome completo">
+
+        <label for="phone">Telefone</label>
+        <input id="phone" name="phone" required placeholder="(99) 99999-9999" maxlength="15">
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" required placeholder="seu@email.com">
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" required rows="5" placeholder="Escreva sua mensagem..."></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+        <p id="form-feedback" class="feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
